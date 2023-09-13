@@ -133,7 +133,16 @@ function accelerate(n) {
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <br>
-myGameArea.clear();
-<button onmousedown="startGame()" onmouseup="startGame()">RESTART</button>
+
+<!-- New function -->
+
+function reset() {
+	myGameArea.clear();
+	startGame();
+
+}
+<button onmousedown="reset()" onmouseup="reset()">RESTART</button>
+<!-- End of New -->
+
 </body>
 </html>
