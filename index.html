@@ -133,7 +133,12 @@ function accelerate(n) {
 
 function reset() {
 	
-	window.location.relod();
+	myObstacles = [];
+	updateGameArea();
+	$(document).ready(function(){
+    	$(window).scrollTop(0);
+});
+	startGame();
 	
 
 }
