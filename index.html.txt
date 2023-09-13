@@ -1,4 +1,0 @@
-<!doctype html>
-<html>
-	<h1> header1 </h1>
-</html>
