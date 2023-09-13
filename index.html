@@ -128,11 +128,6 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
-</script>
-<br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-<p>Use the ACCELERATE button to stay in the air</p>
-<br>
 
 <!-- New function -->
 
@@ -141,6 +136,16 @@ function reset() {
 	startGame();
 
 }
+<!-- End of New Function -->
+
+</script>
+<br>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<p>Use the ACCELERATE button to stay in the air</p>
+<br>
+
+
+<!-- New Button -->
 <button onmousedown="reset()" onmouseup="reset()">RESTART</button>
 <!-- End of New -->
 
