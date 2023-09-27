@@ -28,14 +28,42 @@ css-doodle{
 
 h1{
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 45%;
+  font-size: 42px;
+  font-family: papyrus;
+  text-decoration: underline;
 }
 
 a{
   position: absolute;
   top: 1%;
   left: 1%;
+  color: black;
+}
+
+div{
+position: absolute;
+background: rgba(255, 255, 255, 255); ;
+border: 3px solid black;
+font-size: 21px;
+
+}
+
+#first{top: 90%;
+left: 10px;}
+#second{top: 85%;
+left: 10px;}
+#third{top: 95%;
+left: 10px;}
+
+img{
+position: absolute;
+top: 10px;
+right: 10px;
+    border: 3px solid black;
+
+
 }
 
 
@@ -54,7 +82,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white; }
+  background: black; }
 
 
   css-doodle{
@@ -62,13 +90,22 @@ a{
   position: relative;   
   width: 175%;
   height: 125%;
-  background-color: white;
+  background-color: black;
     
   }
  
   h1{
-    color: black;
+    color: white;
+  }
+  div{
+    color: white;
+    background: rgba(0, 0, 0, 0); ;
+    border: 3px solid white;
+  }
+  img{
+        border: 3px solid white;
+
   }
 
-
+  a{color: white;}
 }
