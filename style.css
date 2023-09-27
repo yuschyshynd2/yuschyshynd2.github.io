@@ -1,19 +1,21 @@
 /* style sheet */
 
 
+
 html, body { 
-  height: 100%; 
-  width: 100%;
+  height: 100%;  
   margin: 0; 
   overflow: hidden;
   overflow: clip; 
   contain: content;
+
+
 }
 body {
-  /*display: flex;*/
+
   align-items: center;
   justify-content: center;
-  background: #000; 
+  background: white; 
 }
 css-doodle{
   position: relative;
@@ -22,5 +24,51 @@ css-doodle{
   width: 100%;
 }
 
-h1{position: absolute;
-top: 0}
+
+
+h1{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+a{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+
+
+@media all and (min-width: 1000px){
+
+ html, body { 
+  
+  width: 100%;  
+  margin: 0; 
+  overflow: hidden;
+  overflow: clip; 
+  contain: content;}
+
+  body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white; }
+
+
+  css-doodle{
+
+  position: relative;   
+  width: 175%;
+  height: 125%;
+  background-color: white;
+    
+  }
+ 
+  h1{
+    color: black;
+  }
+
+
+}
