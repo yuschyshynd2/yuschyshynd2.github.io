@@ -1,111 +1,109 @@
-/* style sheet */
+/* Dominic Yuschyshyn ID#3123230  */
 
 
-
+/* Makes content take up the whole page, getting rid of any overflow */
 html, body { 
   height: 100%;  
   margin: 0; 
   overflow: hidden;
   overflow: clip; 
-  contain: content;
+  contain: content;}
 
-
-}
+/* Center aligns the page and sets background */
 body {
-
   align-items: center;
   justify-content: center;
-  background: white; 
-}
+  background: white; }
+
+/*  Styles the css-doodle animation Sets position, backround color, sets height and width to the whole page*/
 css-doodle{
   position: relative;
   background-color: white;
   height: 100%; 
-  width: 100%;
-}
+  width: 100%;}
 
-
-
+/* Styles header tag "RELAX...", Sets position so it shows up above its nearest ancestor, sets placement, sets font/size and puts an underline under the elipse */
 h1{
   position: absolute;
   top: 40%;
-  left: 45%;
+  left: 40%;
   font-size: 42px;
   font-family: papyrus;
-  text-decoration: underline;
-}
+  text-decoration: underline;}
 
+/*  styles "back" link to be at the top left corner of the screen above the animation in black*/
 a{
   position: absolute;
   top: 1%;
   left: 1%;
-  color: black;
-}
+  color: black;}
 
+/* Styles all the div statements, sets position, backround, color,font size and font type */
 div{
 position: absolute;
-background: rgba(255, 255, 255, 0); ;
+background: rgba(255, 255, 255, .1); ;
 border: 3px solid black;
 font-size: 21px;
+font-family: copperplate;}
 
-}
-
-#first{top: 90%;
-left: 10px;}
-#second{top: 85%;
-left: 10px;}
-#third{top: 95%;
+/*  Puts first div (first quote) 2nd down on the bottom left of the page*/
+#first{
+top: 85%;
 left: 10px;}
 
+/* Puts the second div (second quote) 1st on the bottom left of the page */
+#second{
+top: 80%;
+left: 10px;}
+
+/* Puts the third div (third quote) 3rd on the bottom left of the page */
+#third{
+top: 90%;
+left: 10px;}
+
+/* Styles the image by setting position, placement, and border*/
 img{
 position: absolute;
 top: 10px;
 right: 10px;
-    border: 3px solid black;
+border: 3px solid black;}
 
 
-}
-
-
-
-@media all and (min-width: 1000px){
+/*  media query to check if the page is larger than half screen to change mode for fullscreen*/
+@media all and (min-width: 1050px){
 
  html, body { 
-  
-  width: 100%;  
-  margin: 0; 
-  overflow: hidden;
-  overflow: clip; 
-  contain: content;}
+    width: 100%;
+  }
 
+/*Sets display, placement, and background*/
   body {
   display: flex;
   align-items: center;
   justify-content: center;
   background: black; }
 
-
+/* Sets position, placement and background */
   css-doodle{
-
   position: relative;   
   width: 175%;
-  height: 125%;
-  background-color: black;
-    
-  }
+  height: 200%;
+  background-color: black; }
  
+ /* Sets color and placement */
   h1{
     color: white;
-  }
+    left: 45%; }
+
+ /* Sets color background and border color  */
   div{
     color: white;
-    background: rgba(0, 0, 0, 0); ;
-    border: 3px solid white;
-  }
-  img{
-        border: 3px solid white;
+    background: rgba(0, 0, 0, .1); ;
+    border: 3px solid white;}
 
-  }
+/*  Sets border color*/
+  img{border: 3px solid white;}
 
+/* sets text color */
   a{color: white;}
 }
