@@ -1,0 +1,118 @@
+/* grid file */
+
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	/* background-color: #ccc; */
+}
+
+.container-fluid {
+	width: 100%;
+	/* background-color: lightBlue; */
+}
+
+.container-fluid .row {
+	width: 1170px;
+	margin: 0 auto;
+	/* background-color: lightGreen; */
+}
+
+.row {
+	margin-bottom: 30px;
+	/* background-color: pink; */
+}
+
+.col-1 {
+	float: left;
+	width: 67.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-2 {
+	float: left;
+	width: 165px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-3 {
+	float: left;
+	width: 262.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-4 {
+	float: left;
+	width: 360px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-5 {
+	float: left;
+	width: 457.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-6 {
+	float: left;
+	width: 555px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-7 {
+	float: left;
+	width: 652.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-8 {
+	float: left;
+	width: 750px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-9 {
+	float: left;
+	width: 847.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-10 {
+	float: left;
+	width: 945px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-11 {
+	float: left;
+	width: 1042.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-12 {
+	float: left;
+	width: 1140px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}

@@ -1,0 +1,379 @@
+/**
+ * GLOBAL STYLING
+ */
+
+/* box model fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   Micro clearfix
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background-color: #fffcf5; /* ecru */
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #242321;	
+}
+
+p {
+	line-height: 160%;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+a {
+	color: #c94a00; /* orange */
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #a13b00; /* dark orange */
+}
+
+/* HEADER STYLING */
+
+header .row {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+header ul {
+	list-style: none;
+	margin: 10px 0 0 150px;
+	padding: 0;
+}
+
+header li {
+	float: left;
+	margin-left: 18px;
+}
+
+header .added-margin {
+	margin-top: 10px;
+}
+
+header li img {
+	margin: 0;
+}
+
+header li a {
+	color: #66615a; /* brown */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+header li a:hover {
+	color: #c94a00; /* orange */
+}
+header li#download-link {
+	margin: 10px 0px 0px 15px;
+}
+header li#download-link a {
+	border: solid 1px #66615a; /* brown border */
+	padding: 5px 10px;
+	border-radius: 15px;
+}
+header li#download-link a:hover {
+	color: #ffffff; /* white */
+	background: #66615a; /* brown */
+}
+
+header #facebook-icon {
+	margin-top: 3px;
+}
+
+header #twitter-icon {
+	margin-top: 3px;
+	margin-left: 8px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+
+	header nav ul {
+		margin-left: 15px;
+	}
+}
+
+
+/* HOME PAGE STYLING */
+#jumbotron {
+	background-image: url("../images/hero1.jpg");
+	background-size: covpxer;
+	background-color: #66615a;  /*temporary brown so text shows up */
+	height: 750px;
+}
+#jumbotron h1 {
+	margin-top: 150px;
+	margin-bottom: 25px;
+	color: #ffffff; /* white */
+	font-size: 74px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+#jumbotron h1 span {
+	font-weight: 700;
+}
+#jumbotron a {
+	color: #ffffff; /* white */
+	font-weight: normal;
+}
+#jumbotron a:hover {
+	color: #c94a00; /* orange */
+}
+#jumbotron a.button {
+	color: rgba(255,255,255,0.7); /* white */
+	background-color: #ec5e28; /* bright orange */
+	padding: 10px;
+}
+#jumbotron a.button:hover {
+	color: #ffffff; /* white */
+	background-color: #c94a00; /* orange */
+}
+
+a#buy-now {
+	padding: 10px 20px 10px 20px;
+	border-radius: 20px;
+	background-color: #eb5e28;
+	margin-right: 18px;
+}
+
+a#buy-now:hover {
+	background-color: white;
+}
+
+#watch-video {
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+
+/* Surface pressure */
+
+#surface-pressure .row {
+	margin-top: 85px;
+	border-bottom: 1px solid #f1eae0;
+	color: #67625e;
+}
+
+#surface-pressure h2 {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	line-height: 80%;
+}
+
+
+/* Simply works */
+
+#simply-works {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+#simply-works-header {
+	margin-bottom: 60px;
+}
+
+#simply-works-header p {
+	font-size: 150%;
+	line-height: 140%;
+}
+
+#simply-works h1 {
+	margin: 0;
+	padding: 0;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	font-size: 70px;
+	color: #66625b; /* dark clay */
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1;
+}
+
+#simply-works h2 {
+	color: #272121;
+}
+
+#simply-works-features p   {
+	text-align: left;
+}
+
+.simply-works-icons-adjustment-1 img {
+	padding-bottom: 30px;
+}
+
+.simply-works-icons-adjustment-2 img {
+	padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	#simply-works h2 {
+		font-size: 170%;
+	}
+
+	#simply-works-features p {
+		font-size: 140%;
+		text-align: center;
+	}
+
+	#simply-works h1 {
+		font-size: 410%;
+		padding-bottom: 3%;
+	}
+
+	#simply-works-features section {
+		padding-bottom: 50px;
+	}
+
+	#kiss {
+		padding-bottom: 20px;
+	}
+
+}
+
+
+/* INTERIOR PAGE STYLING */
+
+
+/* jumbotron */
+
+#jumbotron-interior {
+	background-image: url(../images/hero2.jpg);
+	background-size: cover;
+	height: 546px;
+}
+
+#jumbotron-interior h1 {
+	font-size: 53pt;
+	text-transform: uppercase;
+	color: #ffffff; /* white */
+	font-weight: 700;
+	margin-top: 191px;
+	line-height: 110%
+}
+
+#jumbotron-interior h1 span {
+	font-weight: 300;
+} 
+
+#jumbotron-interior p a {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff; /* white */
+}
+
+#jumbotron-interior p a:hover {
+	color: #a13b00; /* dark orange */
+}
+
+
+/* body copy */
+
+#interior-body-copy ul {
+	margin-top: 138px;
+}
+
+#interior-body-copy nav li {
+	text-transform: uppercase;
+	list-style: none;
+	padding: 14px 0 14px 10px;
+	border-bottom: 1px solid #ec5e28; /* bright orange */
+}
+
+#interior-body-copy #why {
+	border-top: 1px solid #ec5e28; /* bright orange */
+}
+
+#interior-body-copy div {
+	margin-top: 87px;
+	margin-bottom: 15px;
+}
+
+#interior-body-copy span {
+	color: #ec5e28; /* bright orange */
+	font-weight: bold;
+}
+
+#interior-body-copy h2 {
+	margin-top: 45px;
+	margin-bottom: 28px;
+}
+
+
+/* FOOTER STYLING */
+footer {
+	background-color: #252321; /* dark grey almost black */
+	color: #a39e93; /* ecru */
+	padding-top: 35px;
+	font-size: 90%;
+}
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer li {
+	margin-bottom: 8px;
+}
+
+footer li a {
+	color: #66615a; /* brown */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+footer .bright li a {
+	color: #f1eae1; /* light ecru */
+}
+
+footer li a:hover {
+	color: #c94a00; /* orange */
+}
+
+.copyright {
+	margin-top: 50px;
+	margin-bottom: 115px;
+	font-size: 85%;
+}
+
+.copyright a {
+ 	font-weight: normal;
+ 	text-transform: none;
+}
+
+@media only screen and (max-width: 575px) {
+	footer {
+		text-align: center;
+	}
+
+	footer img {
+		padding-bottom: 15px;
+	}
+}
