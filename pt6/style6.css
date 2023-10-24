@@ -1,0 +1,143 @@
+/*Dominic Yuschyshyn ID#3123230 DESN340 */
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+
+/*  Main Container (Everything is inside it) */
+.container {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* Header section */
+header {
+    position: fixed;
+    top: 0;
+    left: 10;
+    right: 10;
+    display: flex;
+    padding: 20px;
+    z-index: 3;
+    border: 1px solid black;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border-radius: 15px;
+}
+
+/* Style text inside header */
+#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main section */
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Middle section (inside of main) */
+#middle {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Section */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 10;
+    right: 10;
+    display: flex;
+    padding: 20px;
+    z-index: 3;
+    border: 1px solid black;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border-radius: 15px;
+}
+
+/* Style text inside footer */
+#bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back Button */
+.back {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    color: black;
+    z-index: 4;
+    color: black;
+}
+
+/* Periodic table cell (inside of middle) */
+.cell {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+/* Element's number */
+.number {
+    margin-top: -4px;
+}
+
+/* Element's symbol */
+.symbol {
+    font-size: 36px;
+    margin-top: -8px;
+    line-height: 1.2;
+}
+
+/* Element's Name */
+.name {
+    margin-top: 6px;
+    font-size: 8px;
+    font-weight: 650;
+}
+
+/* Element's weight */
+.weight {
+    font-size: 9px;
+    position: absolute;
+    top: 3;
+    right: 3;
+    transform: translate(160%, 0%);
+}
