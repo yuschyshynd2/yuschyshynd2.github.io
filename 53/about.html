@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>53 redo AboutPage</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- One of the fonts we use is Poppins. I went to Google Fonts and copy&pasted the text for Poppins into my code. I also need the font family syntax for my CSS:
+    font-family: 'Poppins', sans-serif;
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
+          </div>
+          <nav class="col-md-7 offset-md-3"> <!-- This is our header navigation bar links section -->
+            <ul>
+              <li><a href="pencil.html">Pencil</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="https://wetransfer.com/">Wetransfer</a></li>
+              <li ><a id="search">What are you looking for?</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="aboutHero" class="container-fluid">
+      <div class="fixedHalf">
+        <h1>Makers<br>Wanted.</h1>
+        <p><a href="#">New design &amp; engineering blog</a></p>
+      </div>
+      <div class="scrollHalf">
+        <div>
+          <svg class="loopy__shape" width="1074" height="630" viewBox="0 0 1074 630" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-1.38158e-05 313.932C-2.51241e-05 55.2281 194.485 5.25339e-05 527.974 3.79567e-05C861.463 2.33794e-05 1074 38.3596 1074 313.932C1074 589.505 840.271 630 536.987 630C233.702 630 -1.70747e-06 590.938 -1.38158e-05 313.932Z" fill="url(#about-shape-radial)"></path><defs><radialGradient id="about-shape-radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(608 203) rotate(142.863) scale(599.607 757.161)"><stop offset="0.664026" stop-color="#8D70F0"></stop><stop offset="1" stop-color="#FE804B"></stop></radialGradient></defs></svg>
+        </div>
+        
+        <div class="bright">
+          <p class="adjust-height">Hello, we are FiftyThree.</p>
+          <p>We make stuff.</p>
+          <p>Beautiful, practical, meaningful stuff. <br>We make what we love. <br>We love what we do. </p>
+          <h2 class="adjust-height">Why</h2>
+          <p>Over the years we noticed that software that's designed to help us be creative actually made us less creative. Ideas aren't born in slide decks, documents, or image editors. They begin freeform. On paper. In conversations. As sketches.</p>
+          <p>We founded FiftyThree to build tools that work the way we do. Tools for the creative space - the 53 centimeters that magically link head heart, and hand. Tools as simple as pencil and paper. Tools so essential, we really can't imagine working without them.</p>
+          <h2 class="adjust-height">What</h2>
+          <p>In March 2012, we launched <span>Paper by FiftyThree</span>, the simplest and most beautiful way to create on the iPad. Since then, Paper has been downloaded millions of times, and it has won the Apple Design Award, Crunchies Award, AIGA Award, IxDA Award, and Apple's App of the Year.</p>
+          <p> In December of 2013, we released Pencil. The Verge called it "the best iPad stylus yet", in part because of the way Pencil seamlessly integrates with Paper.</p><p>We're pleased to have received such a warm welcome, but we still have much work to do. Our ambition is no less than to change the way people create, and we're building world-class teams in NYC and Seattle to take on this challenge. There are many more apps, services, and hardware products to come.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="container-fluid" 
+      style="
+        border-radius: 0;
+        margin-top: -20px;">
+      <div class="container">
+        <div class="row" id="partners">
+          <h4>Made for Today's Teams</h4>
+          <ul class="col-12">
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+          </ul>
+        </div>
+
+        <hr style="width:100%;text-align:center;margin:0;color: #fff;">
+
+        <div class="row" id="foot-links">
+          <div class="col-md-3">
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
+          </div>
+          <nav class="col-md-2" id="foot-prod">
+            <ul>
+              <li>Products</li>
+              <li>Overview</li>
+              <li>WeTransfer</li>
+              <li>Paste&copy</li>
+              <li>Collect</li>
+              <li>Paper&copy</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-abo">
+            <ul>
+              <li>Products</li>
+              <li>Overview</li>
+              <li>WeTransfer</li>
+              <li>Paste&copy</li>
+              <li>Collect</li>
+              <li>Paper&copy</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-res">
+            <ul>
+              <li>Products</li>
+              <li>Overview</li>
+              <li>WeTransfer</li>
+              <li>Paste&copy</li>
+              <li>Collect</li>
+              <li>Paper&copy</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-exp">
+            <ul>
+              <li>Products</li>
+              <li>Overview</li>
+              <li>WeTransfer</li>
+              <li>Paste&copy</li>
+              <li>Collect</li>
+              <li>Paper&copy</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="row">
+          
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+</html>

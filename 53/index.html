@@ -1,168 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FiftyThree - Unofficial</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- The title of the site -->
+    <title>53 redo Homepage</title>
 
-	<!--<link rel="stylesheet" type="text/css" href="css/grid.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-</head>
-<body>
+    <!-- The normalize file first to get rid of all the pesky default properties -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
 
-	<header class="container">
-		<div class="row">
-			<div class="col-4">
-				<a href="index.html"><img src="images/logo-53.png" alt="Logo"></a>
-			</div>
-			<nav class="col-7">
-				<ul>
-					<li class="added-margin"><a href="interior.html">Think</a></li>
-					<li class="added-margin"><a href="#">Paper</a></li>
-					<li class="added-margin"><a href="#">Pencil</a></li>
-					<li class="added-margin"><a href="#">Mix</a></li>
-					<li class="added-margin"><a href="#">Shop</a></li>
-					<li id="download-link"><a href="#">Download</a></li>
-					<li id="facebook-icon"><a href="http://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
-					<li id="twitter-icon"><a href="http://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
-				</ul>
-			</nav>
-		</div> <!-- .row -->
-	</header>
+    <!-- Here is the Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-	<!-- jumbotron -->
-	<section class="container-fluid" id="jumbotron">
-		<div class="container">
-			<div class="row">
-				<section class="col-6 offset-1">
-					<h1><span>Pencil</span> </br>Think with your hands.</h1>
-					<a href="#" id="buy-now">Buy now</a>
-					<a href="#">Also at Amazon.com</a>
-				</section>
-			</div> <!-- .row -->
-			<div class="row">
-				<div class="col-6 offset-1" id="watch-video">
-					<span><a href="#">Watch video</a></span>	
-				</div>
-			</div> <!-- .row -->
-		</div> <!-- .container -->
-	</section>
+    <!-- One of the fonts we use is Poppins. I went to Google Fonts and copy&pasted the text for Poppins into my code. I also need the font family syntax for my CSS:
+    font-family: 'Poppins', sans-serif;
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- The other font family we use is GT-Super. It comes from Grillitype Foundry so we need to download their trial package and add the typefaces we need to our project folder.
+      You can see the @font-face section in our CSS. This lets us establish a new typeface and where the source file is located.
+     -->
 
-	<!-- surface pressure -->
-	<section class="container" id="surface-pressure">
-		<div class="row">
-			<section class="col-3 offset-2">
-				<img src="images/illustration-1.png" alt="Icon of surface pressure">
-				<h2>Surface Pressure</h2>
-				<p>Expressive from every angle. Pencil's unique tip is shaped to create lines of all sizes without any settings. Use the point for fine details and the angled edge for broad strokes.</p>
-			</section>
-			<div class="col-7">
-				<img src="images/home-pencil-sketch.png" alt="Pencil product shown drawing a building">
-			</div>	
-		</div> <!-- .row -->
-	</section>
-
-	<!-- simply works -->
-	<section class="container" id="simply-works">
-		<div class="row">
-			<section class="col-12" id="simply-works-header">
-				<h1>Simply Works</h1>
-				<p>The best tools don't require a lot of fuss - they just work. With Pencil, we've radically simplified things like charging and wireless connection so you can spend less time in menus and more time creating.</p>
-			</section>
-		</div> <!-- .row -->
-		<div class="row" id="simply-works-features">
-			<section class="col-4 simply-works-icons-adjustment-1">
-				<img src="images/illustration-3.png" alt="Power it up icon">
-				<h2>Power it up</h2>
-				<p>Under normal use, you won't need to recharge Pencil for about a month. The battery can slid out and recharged on any standard USB port in under 90 minutes.</p>
-			</section>
-			<section class="col-4">
-				<img src="images/illustration-4.png" alt="Kiss to pair icon" id="kiss">			
-				<h2>Kiss to Pair &#8482;</h2>
-				<p>Bluetooth connection as it should be: no settings menus, no confusing pairing rituals. Just press Pencil's tip to the screen. Clear, stable, simple... easy as falling in love.</p>
-			</section>
-			<section class="col-4 simply-works-icons-adjustment-2">
-				<img src="images/illustration-2.png" alt="Play nicely">				
-				<h2>Plays nicely</h2>
-				<p>Palm Rejectin, Erase, and Blend work only on Paper and other supported applications, but Pencil also works as a non-connected stylus in any other app and on any touchscreen device.</p>
-			</section>
-		</div> <!-- .row -->
-	</section>
+     <!-- last is the stylesheet that we want to connect to. This comes last in so that our instructions in the style.css file don't get over-written by other files.
+     -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
 
 
+  <!-- *********************
+    Below here starts the code that will show up in the browser -->
+  <body>
+    <!-- The header section should be the same for each page in the 53 site -->
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
+          </div>
+          <nav class="col-md-7 offset-md-3"> <!-- This is our header navigation bar links section -->
+            <ul>
+              <li><a href="pencil.html">Pencil</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="https://wetransfer.com/">Wetransfer</a></li>
+              <li ><a id="search">What are you looking for?</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-	<footer class="container-fluid">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3 offset-md-1 ">
-					<img src="images/logo-53-footer.png" alt="Pencil 53 logo">
-				</div>
-				<nav class="bright col-2">
-					<ul>
-						<li><a href="#">Think</a></li>
-						<li><a href="#">Paper</a></li>
-						<li><a href="#">Pencil</a></li>
-						<li><a href="#">Mix</a></li>
-						<li><a href="#">Book</a></li>
-					</ul>
-				</nav>
-				<nav class="col-2">
-					<ul>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Making</a></li>
-						<li><a href="#">Made with paper</a></li>
-					</ul>
-				</nav>
-				<nav class="col-2">
-					<ul>
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-				<nav class="col-2">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Press</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="row">
-				<section class="copyright col-8 offset-4">
-					<p>
-						Made in New York and Seattle. &copy; 2015 Fifty Three, Inc.
-						<a href="#">Terms</a> 
-						<a href="#">Privacy</a>
-						<a href="#">Legal</a>
-						<a href="#">Security</a>
-					</p>
-				</section>
-			</div> <!-- .row -->
-		</div> <!-- .container -->
-	</footer>
+    <div class="container-fluid" id="hero">
+      <div class="container">
+        <div class="row">
+          <section id="hero-chunk">
+            <h1 class="tighten">Creative Tools</h1>
+            <h5 class="tighten">Make and collaborate with confidence. Our design tools make the digital world feel closer and more real.</h5>
+            <a href="#" class="CTA">Browse products</a>
+          </section>
+        </div>
+      </div> 
+    </div>
 
-</body>
+<!-- The part with the mission statement. slightly altered H2 use color background #ef57d4-->
+    <section class="container-fluid" id="mission">
+      <h2 class="tighten">FiftyThree puts creativity at your fingertips</h2>
+      <p>The best tools don’t require a lot of fuss - they just work.<br>Whether you are coloring inside the lines or thinking outside the box, our Apps and peripherals make the process feel quick and intuitive.</p>
+    </section>
+
+    <section id="splash">
+      
+    </section>
+
+    <section class="container-fluid" id="feature">
+      <div id="paper">
+        <div class="card-chunk">
+          <h2>Paper<br><span>Sketch, paint,<br>and create</span></h2>
+          <p>Create expressive sketches, rich paintings, beautiful illustrations and more with an intuitive tool designed to mimic your natural gestures.</p>
+          <a class="CTAtoo">Try out Paper</a>
+        </div>
+        <div>
+          <img src="images/paper-detail.png" alt="Pencil product shown drawing a building">
+        </div>
+      </div>
+      <div id="pencil">
+        <div class="card-chunk">
+            <img src="images/amazon.jpg" alt="Pencil product shown drawing a building">
+          </div>
+          <div class="card-chunk">
+            <h2>Pencil<br><span>Think with your hands</span></h2>
+            <p>The most natural and expressive tool for getting ideas on Paper. Rest your hand comfortably on the screen and draw, erase, and blend with ease.</p>
+            <a>Buy Pencil on Amazon</a>
+          </div>
+      </div>
+<!--   Here is some code for a video we won't use right away.
+      <div class="row" id="video">
+        <video width="854" height="480" controls>
+        <source src="53video.mp4" type="video/mp4">
+      </div>
+-->
+    </section>
+
+    <section class="container-fluid" id="illust">
+      <h6>José Antonio Roda</h6>
+      <img src="images/Antonio_graphic.png" alt="Antonio Illustration">
+    </section>
+
+    <section class="container-fluid" id="products">
+      <div>
+        <ul id="product-grid">
+          <li><a href="#">Paper<br><p>Creativity App</p></a></li>
+          <li><a href="#">Pencil<br><p>The Best Stylus</p></a></li>
+          <li><a href="#">Paste<br><p>Present your Ideas</p></a></li>
+          <li><a href="#">WeTransfer<br><p>Send your files</p></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container text-center" id="newsletter">
+      <div class="row">
+        <h2>Sign up for our newsletter. it's great.</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-2">
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-outline-success">Sign Me Up</button>
+          
+        </div>
+        
+      </div>
+    </section>
+
+
+<!-- Below here is the Footer code. This should be same on each of your pages 
+*********************************************************
+--> 
+
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row" id="partners">
+          <h4>Made for Today's Teams</h4>
+          <ul class="col-12">
+
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+
+          </ul>
+        </div>
+
+        <hr style="width:100%;text-align:center;margin:0;color: #fff;">
+
+        <div class="row" id="foot-links">
+          <div class="col-md-3">
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
+          </div>
+          <nav class="col-md-2" id="foot-prod">
+            <ul>
+              <li>Products</li>
+              <li>Overview</li>
+              <li>WeTransfer</li>
+              <li>Paste&copy</li>
+              <li>Collect</li>
+              <li>Paper&copy</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-abo">
+            <ul>
+              <li>Company</li>
+              <li>Advertising</li>
+              <li>B Corp</li>
+              <li>Jobs</li>
+              <li>Newsroom</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-res">
+            <ul>
+              <li>Help Center</li>
+              <li>Accessibility</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-exp">
+            <ul>
+              <li>WePresent</li>
+              <li>Ideas Report</li>
+              <li>Creative Hubs Index</li>
+              <li>Blog</li>
+            </ul>
+          </nav>
+        </div>
+
+        <hr style="width:100%;text-align:center;margin:0;color: #fff;">
+        
+        <div class="row" id="bottom">
+          <div class="col-md-3">
+            <ul id="socials">
+              <li id="twitter-icon">
+                <a href="http://www.twitter.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Path" d="M15.6,1.6a9,9,0,0,1-2.1.8,3.4,3.4,0,0,0-2.4-1.1,3.3,3.3,0,0,0-2.3,1,3.3,3.3,0,0,0-1,2.4,2.2,2.2,0,0,0,.1.8A8.4,8.4,0,0,1,4.1,4.4a8.1,8.1,0,0,1-3-2.5A3.5,3.5,0,0,0,.7,3.6,3,3,0,0,0,2.1,6.4,2.3,2.3,0,0,1,.7,6h0a3.1,3.1,0,0,0,.7,2.1A3.5,3.5,0,0,0,3.3,9.4H1.8A3,3,0,0,0,3,11.1a2.9,2.9,0,0,0,1.8.7,6.3,6.3,0,0,1-4,1.4H0a8.9,8.9,0,0,0,5,1.5,8.7,8.7,0,0,0,4-.9,8.6,8.6,0,0,0,3-2.3,14.9,14.9,0,0,0,1.8-3,10.6,10.6,0,0,0,.6-3.4V4.7A6.9,6.9,0,0,0,16,2.9a4.1,4.1,0,0,1-1.9.5A3.4,3.4,0,0,0,15.6,1.6Z" transform="translate(0 -1.3)"></path>
+                  </svg>
+                </a></li>
+              <li id="facebook-icon">
+                <a href="http://www.facebook.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Path" d="M2.3,0A2.3,2.3,0,0,0,0,2.3V13.8A2.2,2.2,0,0,0,2.3,16H8.5V9.8h-2V7.4h2V5.6a2.9,2.9,0,0,1,3.1-3.2h1.9V4.7H12.2c-1,0-1.2.5-1.2,1.2V7.4h2.4l-.3,2.4H11V16h2.8A2.2,2.2,0,0,0,16,13.8V2.3A2.2,2.2,0,0,0,13.8,0Z" transform="translate(0)"></path>
+                  </svg>
+                </a></li>
+              <li id="insta-icon">
+                <a href="http://www.instagram.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path class="instagram-icon-1" d="M16,4.7a7.8,7.8,0,0,0-.4-1.9,4.6,4.6,0,0,0-.9-1.5A4.6,4.6,0,0,0,13.2.4L11.3,0H4.7L2.8.4a4.6,4.6,0,0,0-1.5.9A4.6,4.6,0,0,0,.4,2.8,7.8,7.8,0,0,0,0,4.7v6.6a7.8,7.8,0,0,0,.4,1.9,4.6,4.6,0,0,0,.9,1.5,4.6,4.6,0,0,0,1.5.9l1.9.4h6.6l1.9-.4a4.6,4.6,0,0,0,1.5-.9,4.6,4.6,0,0,0,.9-1.5,7.8,7.8,0,0,0,.4-1.9V4.7Zm-1.5,6.5a3.8,3.8,0,0,1-.3,1.5,1.5,1.5,0,0,1-.6.9,1.5,1.5,0,0,1-.9.6,3.8,3.8,0,0,1-1.5.3H4.8a3.8,3.8,0,0,1-1.5-.3,1.5,1.5,0,0,1-.9-.6,1.5,1.5,0,0,1-.6-.9,3.8,3.8,0,0,1-.3-1.5A22.1,22.1,0,0,1,1.4,8a22.1,22.1,0,0,1,.1-3.2,3.8,3.8,0,0,1,.3-1.5,1.5,1.5,0,0,1,.6-.9,1.5,1.5,0,0,1,.9-.6,3.8,3.8,0,0,1,1.5-.3h6.4a3.8,3.8,0,0,1,1.5.3,1.5,1.5,0,0,1,.9.6,1.5,1.5,0,0,1,.6.9,3.8,3.8,0,0,1,.3,1.5A22.1,22.1,0,0,1,14.6,8,22.1,22.1,0,0,1,14.5,11.2Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M8,3.9A4.1,4.1,0,0,0,3.9,8,4.1,4.1,0,0,0,8,12.1,4.1,4.1,0,0,0,12.1,8,4.1,4.1,0,0,0,8,3.9Zm0,6.8A2.7,2.7,0,1,1,10.7,8,2.7,2.7,0,0,1,8,10.7Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M13.2,3.7a.9.9,0,0,1-.9,1,.9.9,0,0,1-1-1,.9.9,0,0,1,1-.9A.9.9,0,0,1,13.2,3.7Z" transform="translate(0 0)"></path>
+                </a></li>
+              <li id="youtube-icon">
+                <a href="http://www.youtube.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Shape" class="youtube-icon-1" d="M23.2,1.4A2.6,2.6,0,0,1,24,2.7a31.7,31.7,0,0,1,.5,5.8,31.7,31.7,0,0,1-.5,5.8,2.2,2.2,0,0,1-.8,1.3,2.6,2.6,0,0,1-1.3.8c-1.9.5-9.4.5-9.4.5s-7.5,0-9.4-.5a2.2,2.2,0,0,1-1.3-.8A2.2,2.2,0,0,1,1,14.3,31.7,31.7,0,0,1,.5,8.5,31.7,31.7,0,0,1,1,2.7a2.6,2.6,0,0,1,.8-1.3A2.2,2.2,0,0,1,3.1.6C5,.1,12.5.1,12.5.1s7.5,0,9.4.5A2.6,2.6,0,0,1,23.2,1.4ZM16.3,8.5,10.1,4.9v7.2Z" transform="translate(-0.5 -0.1)"></path>
+                  </svg>
+                </a></li>  
+            </ul>
+          </div>
+          <div class="col-md-auto"></div>
+          <div class="col-md-4">
+            <div id="legal">
+              <a href="#">Terms</a>
+              |
+              <a href="#">Privacy</a>
+              <span>&copy2022 WeTransfer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

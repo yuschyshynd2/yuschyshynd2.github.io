@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The title of the site -->
+    <title>53 redo Pencilpage</title>
+
+    <!-- The normalize file first to get rid of all the pesky default properties -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    <!-- Here is the Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- One of the fonts we use is Poppins. I went to Google Fonts and copy&pasted the text for Poppins into my code. I also need the font family syntax for my CSS:
+    font-family: 'Poppins', sans-serif;
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- The other font family we use is GT-Super. It comes from Grillitype Foundry so we need to download their trial package and add the typefaces we need to our project folder.
+      You can see the @font-face section in our CSS. This lets us establish a new typeface and where the source file is located.
+     -->
+
+     <!-- last is the stylesheet that we want to connect to. This comes last in so that our instructions in the style.css file don't get over-written by other files.
+     -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+
+  <!-- *********************
+    Below here starts the code that will show up in the browser -->
+  <body>
+    <!-- The header section should be the same for each page in the 53 site -->
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
+          </div>
+          <nav class="col-md-7 offset-md-3"> <!-- This is our header navigation bar links section -->
+            <ul>
+              <li><a href="pencil.html">Pencil</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="https://wetransfer.com/">Wetransfer</a></li>
+              <li ><a id="search">What are you looking for?</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+  <!-- ************************************ -->
+  <!--            Start of changes          -->
+  <!-- ************************************ -->
+
+    <div class="container-fluid" id="pencilhero">
+      <div class="container">
+        <div class="row">
+          <section id="pencilhero-chunk">
+            <h1 class="tighten">Super Pencil</h1>
+            <h5 class="tighten">This one of a kind magical pencil  was forged in the heart of Tarturus, it is the worlds first magic pencil which gives insperation. It is indestructale and is guaranteed to last and write forever!</h5>
+            <a href="#" class="CTA">Buy Now</a>
+            <div class="circles">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+            </div>
+          </section>
+        </div>
+      </div> 
+    </div>
+
+<!-- The part with the mission statement. slightly altered H2 use color background #ef57d4-->
+    <section class="container-fluid" id="pencilMission">
+      <h2 class="tighten large">The Council of FiftyThree Mages!</h2>
+      <p>Each member of this esteemed council is a master of their craft, possessing unparalleled wisdom and power. <br>From the sagacious sages who harness the forces of nature to the enigmatic enchanters who manipulate the threads of reality, the Council of Fifty-Three Mages encompasses the full spectrum of magical prowess.</p>
+    </section>
+
+    <section id="splash">
+    
+    </section>
+
+    <section class="container-fluid" id="feature">
+      <div id="pencilPaper">
+        <div class="pencil-card-chunk pencil-paper-left">
+          <h2>Try Now!</h2>
+          <p>The council has decided to allow trials of the magic pencil. They will harness the forces of teleportation, to deliver the enchanted writing instrument into your possession.</p>
+          <a class="CTAtoo">Try out Super Pencil</a>
+        </div>
+        <div>
+          <img class = "pencil-paper-right" src="images/quill3.jpg" alt="Fancy quill">
+        </div>
+      </div>
+
+      <div id="pencilPencil">
+        <div class="row">
+            <h2>A message from the Grand Council!</h2>
+        </div>
+        <div class="row" id="video">
+          <video width="854" height="480" controls>
+          <source src="53video.mp4" type="video/mp4">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container-fluid" id="ill">
+      <img src="images/pencil.jpg" alt="Antonio Illustration">
+    </section>
+
+    <section class="container-fluid" id="products">
+      <div>
+        <ul id="pencilProduct-grid">
+          <li class="bordered-li"><u>Everlasting</u><br><p>This magicaly imbued pencil possesses an enchantment that ensures its ink will never deplete thus allowing it to be used for all of eternity. Endless and everlasting. for all time </p>
+          </li>
+          <li class="bordered-li"><u>Invincible</u><br><p>Forged with great mystical resilience, this magic pencil stands eternal, invincible and imune against the tests of time and remains impervious to all possible outside forces. </p></li>
+          <li class="bordered-li"><u>Enlightning</u><br><p> With every stroke of this pencils enchanted lead, the magic pencil breathes life into the imagination of its users, enlightning its users with a spark of inspiration.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container text-center" id="newsletter">
+      <div class="row">
+        <h1><b><u>Dont miss out on this once in a lifetime chance.<u><b></h1>
+      </div>
+      <div class="row">
+        <div class="text-center">
+          <button type="button" class="pencilbtn btn-outline-success tighten">Buy Now!</button>
+        </div>
+      </div>
+    </section>
+
+<br><br><br>
+
+<!-- ************************************ -->
+<!--             End of changes           -->
+<!-- ************************************ -->
+
+<!-- Below here is the Footer code. This should be same on each of your pages 
+*********************************************************
+--> 
+
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row" id="partners">
+          <h4>Made for Today's Teams</h4>
+          <ul class="col-12">
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+            <li><img src="https://www.placecage.com/150/50"></li>
+          </ul>
+        </div>
+
+        <hr style="width:100%;text-align:center;margin:0;color: #fff;">
+
+        <div class="row" id="foot-links">
+          <div class="col-md-3">
+            <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
+          </div>
+          <nav class="col-md-2" id="foot-prod">
+            <ul>
+              <li>Products</li>
+              <li>Overview</li>
+              <li>WeTransfer</li>
+              <li>Paste&copy</li>
+              <li>Collect</li>
+              <li>Paper&copy</li>
+              <li>Pricing</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-abo">
+            <ul>
+              <li>Company</li>
+              <li>Advertising</li>
+              <li>B Corp</li>
+              <li>Jobs</li>
+              <li>Newsroom</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-res">
+            <ul>
+              <li>Help Center</li>
+              <li>Accessibility</li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-exp">
+            <ul>
+              <li>WePresent</li>
+              <li>Ideas Report</li>
+              <li>Creative Hubs Index</li>
+              <li>Blog</li>
+            </ul>
+          </nav>
+        </div>
+
+        <hr style="width:100%;text-align:center;margin:0;color: #fff;">
+        
+        <div class="row" id="bottom">
+          <div class="col-md-3">
+            <ul id="socials">
+              <li id="twitter-icon">
+                <a href="http://www.twitter.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Path" d="M15.6,1.6a9,9,0,0,1-2.1.8,3.4,3.4,0,0,0-2.4-1.1,3.3,3.3,0,0,0-2.3,1,3.3,3.3,0,0,0-1,2.4,2.2,2.2,0,0,0,.1.8A8.4,8.4,0,0,1,4.1,4.4a8.1,8.1,0,0,1-3-2.5A3.5,3.5,0,0,0,.7,3.6,3,3,0,0,0,2.1,6.4,2.3,2.3,0,0,1,.7,6h0a3.1,3.1,0,0,0,.7,2.1A3.5,3.5,0,0,0,3.3,9.4H1.8A3,3,0,0,0,3,11.1a2.9,2.9,0,0,0,1.8.7,6.3,6.3,0,0,1-4,1.4H0a8.9,8.9,0,0,0,5,1.5,8.7,8.7,0,0,0,4-.9,8.6,8.6,0,0,0,3-2.3,14.9,14.9,0,0,0,1.8-3,10.6,10.6,0,0,0,.6-3.4V4.7A6.9,6.9,0,0,0,16,2.9a4.1,4.1,0,0,1-1.9.5A3.4,3.4,0,0,0,15.6,1.6Z" transform="translate(0 -1.3)"></path>
+                  </svg>
+                </a></li>
+              <li id="facebook-icon">
+                <a href="http://www.facebook.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Path" d="M2.3,0A2.3,2.3,0,0,0,0,2.3V13.8A2.2,2.2,0,0,0,2.3,16H8.5V9.8h-2V7.4h2V5.6a2.9,2.9,0,0,1,3.1-3.2h1.9V4.7H12.2c-1,0-1.2.5-1.2,1.2V7.4h2.4l-.3,2.4H11V16h2.8A2.2,2.2,0,0,0,16,13.8V2.3A2.2,2.2,0,0,0,13.8,0Z" transform="translate(0)"></path>
+                  </svg>
+                </a></li>
+              <li id="insta-icon">
+                <a href="http://www.instagram.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path class="instagram-icon-1" d="M16,4.7a7.8,7.8,0,0,0-.4-1.9,4.6,4.6,0,0,0-.9-1.5A4.6,4.6,0,0,0,13.2.4L11.3,0H4.7L2.8.4a4.6,4.6,0,0,0-1.5.9A4.6,4.6,0,0,0,.4,2.8,7.8,7.8,0,0,0,0,4.7v6.6a7.8,7.8,0,0,0,.4,1.9,4.6,4.6,0,0,0,.9,1.5,4.6,4.6,0,0,0,1.5.9l1.9.4h6.6l1.9-.4a4.6,4.6,0,0,0,1.5-.9,4.6,4.6,0,0,0,.9-1.5,7.8,7.8,0,0,0,.4-1.9V4.7Zm-1.5,6.5a3.8,3.8,0,0,1-.3,1.5,1.5,1.5,0,0,1-.6.9,1.5,1.5,0,0,1-.9.6,3.8,3.8,0,0,1-1.5.3H4.8a3.8,3.8,0,0,1-1.5-.3,1.5,1.5,0,0,1-.9-.6,1.5,1.5,0,0,1-.6-.9,3.8,3.8,0,0,1-.3-1.5A22.1,22.1,0,0,1,1.4,8a22.1,22.1,0,0,1,.1-3.2,3.8,3.8,0,0,1,.3-1.5,1.5,1.5,0,0,1,.6-.9,1.5,1.5,0,0,1,.9-.6,3.8,3.8,0,0,1,1.5-.3h6.4a3.8,3.8,0,0,1,1.5.3,1.5,1.5,0,0,1,.9.6,1.5,1.5,0,0,1,.6.9,3.8,3.8,0,0,1,.3,1.5A22.1,22.1,0,0,1,14.6,8,22.1,22.1,0,0,1,14.5,11.2Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M8,3.9A4.1,4.1,0,0,0,3.9,8,4.1,4.1,0,0,0,8,12.1,4.1,4.1,0,0,0,12.1,8,4.1,4.1,0,0,0,8,3.9Zm0,6.8A2.7,2.7,0,1,1,10.7,8,2.7,2.7,0,0,1,8,10.7Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M13.2,3.7a.9.9,0,0,1-.9,1,.9.9,0,0,1-1-1,.9.9,0,0,1,1-.9A.9.9,0,0,1,13.2,3.7Z" transform="translate(0 0)"></path>
+                </a></li>
+              <li id="youtube-icon">
+                <a href="http://www.youtube.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Shape" class="youtube-icon-1" d="M23.2,1.4A2.6,2.6,0,0,1,24,2.7a31.7,31.7,0,0,1,.5,5.8,31.7,31.7,0,0,1-.5,5.8,2.2,2.2,0,0,1-.8,1.3,2.6,2.6,0,0,1-1.3.8c-1.9.5-9.4.5-9.4.5s-7.5,0-9.4-.5a2.2,2.2,0,0,1-1.3-.8A2.2,2.2,0,0,1,1,14.3,31.7,31.7,0,0,1,.5,8.5,31.7,31.7,0,0,1,1,2.7a2.6,2.6,0,0,1,.8-1.3A2.2,2.2,0,0,1,3.1.6C5,.1,12.5.1,12.5.1s7.5,0,9.4.5A2.6,2.6,0,0,1,23.2,1.4ZM16.3,8.5,10.1,4.9v7.2Z" transform="translate(-0.5 -0.1)"></path>
+                  </svg>
+                </a></li>  
+            </ul>
+          </div>
+          <div class="col-md-auto"></div>
+          <div class="col-md-4">
+            <div id="legal">
+              <a href="#">Terms</a>
+              |
+              <a href="#">Privacy</a>
+              <span>&copy2022 WeTransfer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+</html>

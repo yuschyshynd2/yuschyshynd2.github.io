@@ -1,379 +1,788 @@
-/**
- * GLOBAL STYLING
- */
+/* Stylesheet for the 53 redesign 
 
-/* box model fix */
+
+Colors: ;
+White
+Black
+Red highlight
+Contrast button color #ef57d4
+
+Typefaces being used:
+Monteserrat for main titles 
+eaves for body text
+
+*/
+
+/* NOTE: I did not to change the provided source code so didnt change prewritten styles 
+but to do what i wanted i instead got more specific and made new styles to make it work 
+how I wanted. My new styles are located at the bottom of the css in a labeled section 
+Note: I kept some of the origional names such as card-chunk, btn, hero, paper, pencil etc
+as i though it was better/easier to understand than making a bunch of new names but changed
+them to pencilbtn, pencilhero, etc to make them specificaly for the pencil page. */
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
-/* ==========================================================================
-   Micro clearfix
-   ========================================================================== */
+/* clear Fix */
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
 }
 
-.clearfix:after {
-    clear: both;
+.row:after {
+	clear: both;
 }
+
+/* image rules */
 
 img {
-	max-width: 100%;
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "GT-Super";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+}
+
+@font-face {
+	font-family: "GT-Medium";
+	src: url("../GT-Super/GT-Super-Display-Medium.woff2");
+}
+
+@font-face {
+	font-family: "GT-Light";
+	src: url("../GT-Super/GT-Super-Display-Regular.woff2");
 }
 
 body {
-	background-color: #fffcf5; /* ecru */
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #242321;	
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #ffeae7;
 }
 
-p {
-	line-height: 160%;
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	margin: 1;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use this but I am going 
+	to use my Figma File as a refernce and they use absolute values
+	*/
 }
 
 h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
-	font-weight: bolder;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: "GT-Super";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
 }
 
 a {
-	color: #c94a00; /* orange */
-	font-weight: bold;
 	text-decoration: none;
+	color: #fff;
+	font-family: 'Poppins';
 }
 
-a:hover {
-	color: #a13b00; /* dark orange */
+ul {
+	list-style-type: none;
 }
 
-/* HEADER STYLING */
-
-header .row {
-	margin-top: 25px;
-	margin-bottom: 20px;
+.tighten {
+	letter-spacing: -0.03em;
 }
 
-header ul {
-	list-style: none;
-	margin: 10px 0 0 150px;
-	padding: 0;
+/* header styles and rules */
+
+header {
+	background-color: #153b84;
+	color: #fff;
+	position: fixed;
+	height: 90px;
+	z-index: 4;
+	font-size: 0.6em;
 }
 
+.icon {
+	fill:  whitesmoke;
+}
+
+/* 
 header li {
 	float: left;
 	margin-left: 18px;
 }
+*/
 
-header .added-margin {
-	margin-top: 10px;
-}
-
-header li img {
-	margin: 0;
-}
-
-header li a {
-	color: #66615a; /* brown */
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 14px;
-}
-
-header li a:hover {
-	color: #c94a00; /* orange */
-}
-header li#download-link {
-	margin: 10px 0px 0px 15px;
-}
-header li#download-link a {
-	border: solid 1px #66615a; /* brown border */
-	padding: 5px 10px;
-	border-radius: 15px;
-}
-header li#download-link a:hover {
-	color: #ffffff; /* white */
-	background: #66615a; /* brown */
-}
-
-header #facebook-icon {
-	margin-top: 3px;
-}
-
-header #twitter-icon {
-	margin-top: 3px;
-	margin-left: 8px;
-}
-
-@media only screen and (min-width: 576px) and (max-width: 1200px) {
-
-	header nav ul {
-		margin-left: 15px;
-	}
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 120px;
+	margin-top: 15px;
 }
 
 
-/* HOME PAGE STYLING */
-#jumbotron {
+#search {
+	display: inline-block;
+	border-style: solid;
+	border-color: #fff;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	border-radius: 30px;
+	width: 310px;
+}
+
+#search a {
+	line-height: 100px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+/* homepage hero styles and rules */
+
+#hero {
 	background-image: url("../images/hero1.jpg");
-	background-size: covpxer;
-	background-color: #66615a;  /*temporary brown so text shows up */
-	height: 750px;
-}
-#jumbotron h1 {
-	margin-top: 150px;
-	margin-bottom: 25px;
-	color: #ffffff; /* white */
-	font-size: 74px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-#jumbotron h1 span {
-	font-weight: 700;
-}
-#jumbotron a {
-	color: #ffffff; /* white */
-	font-weight: normal;
-}
-#jumbotron a:hover {
-	color: #c94a00; /* orange */
-}
-#jumbotron a.button {
-	color: rgba(255,255,255,0.7); /* white */
-	background-color: #ec5e28; /* bright orange */
-	padding: 10px;
-}
-#jumbotron a.button:hover {
-	color: #ffffff; /* white */
-	background-color: #c94a00; /* orange */
+	background-size: cover;
+	background-color: red;
+	height: 90vh;
 }
 
-a#buy-now {
-	padding: 10px 20px 10px 20px;
-	border-radius: 20px;
-	background-color: #eb5e28;
-	margin-right: 18px;
+#hero-chunk {
+	width: 400px;
+	color: #fff;
+	margin-top: 200px;
+	margin-left: 100px;
 }
 
-a#buy-now:hover {
-	background-color: white;
+#hero h1 {
+	padding-bottom: 16px;
 }
 
-#watch-video {
-	margin-top: 150px;
-	margin-bottom: 50px;
-}
-
-
-/* Surface pressure */
-
-#surface-pressure .row {
-	margin-top: 85px;
-	border-bottom: 1px solid #f1eae0;
-	color: #67625e;
-}
-
-#surface-pressure h2 {
-	margin-top: 40px;
-	margin-bottom: 10px;
-	line-height: 80%;
-}
-
-
-/* Simply works */
-
-#simply-works {
-	text-align: center;
-	margin-bottom: 60px;
-}
-
-#simply-works-header {
-	margin-bottom: 60px;
-}
-
-#simply-works-header p {
-	font-size: 150%;
-	line-height: 140%;
-}
-
-#simply-works h1 {
-	margin: 0;
-	padding: 0;
-	margin-top: 150px;
-	margin-bottom: 20px;
-	font-size: 70px;
-	color: #66625b; /* dark clay */
-	text-transform: uppercase;
-	font-weight: normal;
-	line-height: 1;
-}
-
-#simply-works h2 {
-	color: #272121;
-}
-
-#simply-works-features p   {
-	text-align: left;
-}
-
-.simply-works-icons-adjustment-1 img {
+#hero h5 {
 	padding-bottom: 30px;
 }
 
-.simply-works-icons-adjustment-2 img {
-	padding-bottom: 20px;
-}
-
-@media only screen and (max-width: 767px) {
-
-	#simply-works h2 {
-		font-size: 170%;
-	}
-
-	#simply-works-features p {
-		font-size: 140%;
-		text-align: center;
-	}
-
-	#simply-works h1 {
-		font-size: 410%;
-		padding-bottom: 3%;
-	}
-
-	#simply-works-features section {
-		padding-bottom: 50px;
-	}
-
-	#kiss {
-		padding-bottom: 20px;
-	}
-
+a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
 }
 
 
-/* INTERIOR PAGE STYLING */
-
-
-/* jumbotron */
-
-#jumbotron-interior {
-	background-image: url(../images/hero2.jpg);
-	background-size: cover;
-	height: 546px;
+/* homepage mission statemetent styles and rules */
+#mission {
+	text-align: center;
+	color: #161616;
+	width: 680px;
+	margin: 80px auto;
+	margin-bottom: 160px;
 }
 
-#jumbotron-interior h1 {
-	font-size: 53pt;
-	text-transform: uppercase;
-	color: #ffffff; /* white */
-	font-weight: 700;
-	margin-top: 191px;
-	line-height: 110%
+#mission h2 {
+	padding-bottom: 60px;
 }
 
-#jumbotron-interior h1 span {
-	font-weight: 300;
-} 
-
-#jumbotron-interior p a {
-	font-size: 18px;
-	text-transform: uppercase;
-	color: #ffffff; /* white */
+#mission p {
+	width: 600px;
+	margin: 0 auto;
 }
 
-#jumbotron-interior p a:hover {
-	color: #a13b00; /* dark orange */
+/* Splash graphic 
+Its the same as a container-fluid section 
+but it doesn't have any content*/ 
+
+#splash {
+	width: 100%;
+	height: 100vh;
+	margin-top: -100px;
+	background-image: url("../images/splash.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+/* Homepage product feature styles and rules */
 
-/* body copy */
-
-#interior-body-copy ul {
-	margin-top: 138px;
+#feature {
+	margin-top: -470px;
 }
 
-#interior-body-copy nav li {
-	text-transform: uppercase;
-	list-style: none;
-	padding: 14px 0 14px 10px;
-	border-bottom: 1px solid #ec5e28; /* bright orange */
+.card-chunk span {
+	font-family: "GT-Light";
+	font-size: 34px;
 }
 
-#interior-body-copy #why {
-	border-top: 1px solid #ec5e28; /* bright orange */
+.card-chunk h2 {
+	margin: 50px 0;
 }
 
-#interior-body-copy div {
-	margin-top: 87px;
-	margin-bottom: 15px;
+.card-chunk p {
+	margin-bottom: 50px;
 }
 
-#interior-body-copy span {
-	color: #ec5e28; /* bright orange */
-	font-weight: bold;
+a.CTAtoo {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	border-style: solid;
 }
 
-#interior-body-copy h2 {
-	margin-top: 45px;
-	margin-bottom: 28px;
+#paper {
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+	overflow: hidden;
 }
 
-
-/* FOOTER STYLING */
-footer {
-	background-color: #252321; /* dark grey almost black */
-	color: #a39e93; /* ecru */
-	padding-top: 35px;
-	font-size: 90%;
+#pencil {
+	background-color: #fff;
+	color: #161616;
+	width: 95vw;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 670px 470px;
+	column-gap: 30px;
+	overflow: hidden;
 }
-footer ul {
-	list-style: none;
-	margin: 0;
+
+#video {
+	background-color: black;
+	width: 970px;
+	margin: -300px auto;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 90%;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#video video {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+#illust {
+	margin-top: -500px;
+	height: 570px;
+	position: relative;
+	overflow: hidden;
 	padding: 0;
 }
+
+#illust h6 {
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	z-index: -1;
+}
+
+#illust img{
+	
+	position: absolute;
+	z-index: -2;
+}
+
+#products a {
+	color: #161616;
+}
+
+#product-grid {
+	width: 1170px;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+
+#newsletter {
+	height: 20vh;
+	margin-top: 40px;
+}
+
+#newsletter .row {
+	margin-bottom: 30px;
+}
+
+#newsletter .btn {
+	background-color: none;
+}
+
+#newsletter .btn:hover {
+	background-color: black;
+}
+
+.btn {
+	border-radius: 50px;
+}
+
+/*********************
+
+/* About Page styles and rules 
+
+********************/
+
+#aboutHero {
+	background-size: cover;
+	background-color: #161616;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 200px;
+}
+
+#aboutHero h1 {
+	color: #fff;
+}
+
+.fixedHalf {
+	width: 50%;
+	position: fixed;
+	margin-top: -250px;
+	margin-left: 25vw;
+}
+
+.scrollHalf {
+	width: 50%;
+	margin-left: 50%;
+	margin-top: -180px;
+	overflow: hidden;
+	padding-right: 15%;
+}
+
+.bright {
+	color: #fff;
+}
+
+.adjust-height {
+	line-height: 6rem;
+}
+
+/* Footer styles and rules */
+
+footer {
+	background-color: #161616;
+	border-radius: 125px 125px 0px 0px;
+	color: #fff;
+	position: relative;
+	z-index: 4;
+}
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
+}
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0 5%;
+}
+
+#partners ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 footer li {
-	margin-bottom: 8px;
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding-bottom: 15px;
 }
 
-footer li a {
-	color: #66615a; /* brown */
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold;
+#foot-links {
+	margin-top: 40px;
 }
 
-footer .bright li a {
-	color: #f1eae1; /* light ecru */
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
 }
 
-footer li a:hover {
-	color: #c94a00; /* orange */
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
 }
 
-.copyright {
-	margin-top: 50px;
-	margin-bottom: 115px;
-	font-size: 85%;
+#foot-links li {
+	text-align: left;
 }
 
-.copyright a {
- 	font-weight: normal;
- 	text-transform: none;
+#foot-links img {
+	max-width: 70px;
 }
 
-@media only screen and (max-width: 575px) {
-	footer {
-		text-align: center;
-	}
+#socials {
+	display: flex;
+	flex-direction: row;
+}
 
-	footer img {
-		padding-bottom: 15px;
-	}
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
+}
+
+
+
+/*********************
+ New styles and rules 
+********************/
+
+/* Style for "Everlasting/Invincible/Enlightning" sections */
+.bordered-li {
+  border: 1px solid black;
+  border-radius: 21px;
+  padding: 10px;
+}
+
+/* Style for "Council of 53 mages" Title */
+.large{
+	font-size: 75px;
+}
+
+/* Style for right side of paper section, div holds image */
+.pencil-paper-right{
+	width: 100%;
+	height: 100%;
+	margin-left: 10px;
+}
+
+/* Style for left side of paper section, div holds text */
+.pencil-paper-left{
+	width: 100%;
+	margin-right: 5px;
+}
+
+/* Style for pencil section of pencil page (Try now section) */
+#pencilPencil {
+	background-color: #fff;
+	color: #161616;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	padding: 20px;
+	border: 10px solid black;
+}
+
+/* Style for paper section of pencil page (video section) */
+#pencilPaper {
+	background-color: #161616;
+	color: #fff;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 95px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	overflow: hidden;
+	border: 10px solid;
+}
+
+/* Style for button in newsletter section of pencil page  */
+.pencilbtn {
+	border: 5px solid black;
+	border-radius: 50px;
+	font-size: 42px;
+	padding-bottom: 10px;
+}
+
+/* Style for the product grid on the pencil page  */
+#pencilProduct-grid {
+	width: 75%;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	padding: 0px;
+}
+
+/* Style for mission section of pencil page */
+#pencilMission {
+	text-align: center;
+	color: #161616;
+	width: 75%;
+	margin: 80px auto;
+	margin-bottom: 160px;
+	padding: 0px;
+}
+
+/* Style for illustrator section */
+#ill {
+	margin-top: -750px;
+	height: 800px;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+
+/* Style for h6 in illustrator section */
+#ill h6 {
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	z-index: -1;
+}
+
+/* Style for image in illustrator section */
+#ill img{
+	height: 800px ;
+	position: absolute;
+	z-index: -2;
+}
+/* Style for div that holds circles (circles in hero section) */
+.circles{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* Style for first circle */
+.circle1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  animation-name: circle1Color;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+/* Style for second circle */
+.circle2{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  animation-name: circle2Color;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+/* Style for third circle */
+.circle3{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  animation-name: circle3Color;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+/* Style for hero section of pencil page */
+#pencilhero {
+	background-image: url("../images/quill.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: red;
+	height: 90vh;
+	animation-name: backgroundCycle;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+/* animation to loop through hero backgrounds */
+@keyframes backgroundCycle {
+  0%, 30% {
+    background-image: url("../images/quill.jpg");
+  }
+  33%, 63% {
+    background-image: url("../images/quill2.jpg");
+  }
+  66%, 96% {
+    background-image: url("../images/table.jpeg");
+  }
+}
+
+/* Style for hero chunk of pencl page */
+#pencilhero-chunk {
+	width: 400px;
+	color: #fff;
+	margin-top: 200px;
+	margin-left: 100px;
+}
+
+/* Style for h1 in hero section of pencil page */
+#pencilhero h1 {
+	padding-bottom: 16px;
+}
+
+/* Style for h5 in hero section of pencil page */
+#pencilhero h5 {
+	padding-bottom: 30px;
+}
+
+/* Animation for the first Circle */
+@keyframes circle1Color {
+  0%, 30% {
+    background-color: black;
+  }
+
+  33%, 63% {
+    background-color: white;
+  }
+
+  66%, 96% {
+    background-color: white;
+  }
+}
+
+/* Animation for the second Circle */
+@keyframes circle2Color {
+  0%, 30% {
+    background-color: white;
+  }
+
+  33%, 63% {
+    background-color: black;
+  }
+
+  66%, 96% {
+    background-color: white;
+  }
+}
+
+/* Animation for the third Circle */
+@keyframes circle3Color {
+  0%, 30% {
+    background-color: white;
+  }
+
+  33%, 63% {
+    background-color: white;
+  }
+
+  66%, 96% {
+    background-color: black;
+  }
+}
+
+/* Style for span in card chunk section of pencil page */
+.pencil-card-chunk span {
+	font-family: "GT-Light";
+	font-size: 34px;
+}
+
+/* Style for h2 in card chunk section of pencil page */
+.pencil-card-chunk h2 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* Style for p in card chunk section of pencil page */
+.pencil-card-chunk p {
+	margin-bottom: 20px;
+}
+
+/* Style for hover state for button in newsletter section of pencil page */
+#newsletter .pencilbtn:hover {
+	background-color: black;
+	color: white;
 }
