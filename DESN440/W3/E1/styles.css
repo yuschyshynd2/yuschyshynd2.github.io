@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'chromaticaTrial';
+  src: url('./fonts/ChromaticaTrial-Regular.otf');
+}
+
+@font-face {
+  font-family: 'hellenic';
+  src: url('./fonts/HellenicTypewriterTrial-Regular.otf');
+}
+
+*{
+        
+       /* font-family: 'chromaticaTrial', sans-serif; */
+       /* font-family: 'hellenic'; */
+       font-family: 'hellenic';
+
+}
+
+.title {
+    color: green;
+}
+
+
