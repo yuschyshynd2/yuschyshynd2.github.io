@@ -1,0 +1,110 @@
+
+
+@font-face {
+  font-family: 'chromaticaTrial';
+  src: url('./fonts/ChromaticaTrial-Regular.otf');
+}
+
+@font-face {
+  font-family: 'hellenicBold';
+  src: url('./fonts/HellenicTypewriterTrial-Bold.otf');
+}
+@font-face {
+  font-family: 'hellenicItalic';
+  src: url('./fonts/HellenicTypewriterTrial-RegularItalic.otf');
+}
+
+body{
+  background-color: #F9F5F1;
+}
+
+img{
+  width: 500px;
+  height: 500 px;
+}
+
+.card{
+  background-color: #FFFEF8;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  padding-top: 40px;
+  padding-bottom: 45px;
+  border-style: none;
+  
+}
+
+.button{
+    background-color: #FFFEF8;
+    border: 1px solid black;
+    box-shadow: 4px 4px 0px rgba(191, 179, 60, 1);
+  width: 50%;
+  text-align: center;
+   position: relative;
+    top: -20px; /* Adjust the value to move the div up */
+    left: 200px; 
+}
+
+.button:hover {
+  cursor: pointer;
+  /*  */
+}
+
+/* For the button */
+h1{
+  color: black;
+  font-family: 'hellenicItalic', cursive;
+  transform: translateY(5px);
+}
+
+
+/* body paragraph */
+p{
+  font-family: 'chromaticaTrial', sans-serif;
+  font-weight: 500;
+  width: 65%;
+  font-size: 20px;
+  transform: translateX(-4%);
+}
+
+/* Title */
+h2{
+  color: black;
+  font-family: 'hellenicBold', cursive;
+  
+  width: 60%;
+  margin-left: -10%;
+
+}
+
+
+#card1{
+  height: 400px;
+}
+#card2{
+  height: 450px;
+}
+#card3{
+  height: 375px;
+     transform: translateY(-15px);
+
+}
+#card4{
+  height: 450px;
+}
+.image2{
+  height: 600px;
+   transform: translateY(50px);
+
+}
+
+#dirt{
+       transform: translateY(-15px);
+
+}
+
+#row4{
+         transform: translateY(50px);
+
+}
