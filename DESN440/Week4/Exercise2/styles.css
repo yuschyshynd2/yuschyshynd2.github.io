@@ -1,0 +1,43 @@
+
+body{
+  background-color: #fcfcff ;
+  color: #115;
+}
+input[type=radio]{
+  display: none;
+}
+
+label{
+  border: 5px solid #115;
+  padding: 1em 1.5em;
+  border-radius: .5em;
+  display: block;
+  margin-top: .9em;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  filter: grayscale(90%);
+  width: 200px;
+}
+
+label:hover{
+  cursor: url(https://uploads-ssl.webflow.com/5f4e8114a9640d4aa2c637c4/5f75229803e33c67887b0212_blue%20squiggle%20-%20export.svg), pointer;
+  border-color: blue;
+  filter: grayscale(50%);
+  transform: scale(1.02);
+  transition-duration: 1s;
+  color: blue;
+  border: 5px solid blue;
+  
+
+}
+
+input:checked + label {
+  border-color: blue;
+  box-shadow: 10px 10px 0px blue;
+  color: blue;
+  transform: translate(-5px, -10px)
+  scale(1.02);
+  filter: none;
+  
+}

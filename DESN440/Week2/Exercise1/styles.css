@@ -1,0 +1,57 @@
+
+.text{
+  background-color: #081;
+  height: 12em;
+  border: 3px solid white;
+}
+
+.image{
+  background-color: #081a;
+    height: 12em;
+    border: 3px solid white;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.B{
+  background-color:#99ffd3;
+background-image:
+radial-gradient(at 90% 90%, hsla(294,80%,78%,1) 0px, transparent 50%),
+radial-gradient(at 88% 19%, hsla(153,90%,64%,1) 0px, transparent 50%),
+radial-gradient(at 43% 53%, hsla(163,80%,61%,1) 0px, transparent 50%),
+radial-gradient(at 1% 8%, hsla(318,73%,66%,1) 0px, transparent 50%),
+radial-gradient(at 78% 64%, hsla(271,83%,63%,1) 0px, transparent 50%),
+radial-gradient(at 24% 92%, hsla(146,74%,74%,1) 0px, transparent 50%),
+radial-gradient(at 25% 79%, hsla(224,91%,79%,1) 0px, transparent 50%);
+transform: translateY(1px);
+}
+
+.photo{
+  object-fit: cover;
+  max-width: 100%; 
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.btn{
+ 
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+#button{
+  position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(6,170,25,1) 59%, rgba(0,212,255,1) 100%);
+
+}
+.fixed{
+  position: relative;
+}
+
